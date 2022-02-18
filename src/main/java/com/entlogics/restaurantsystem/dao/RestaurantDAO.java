@@ -19,7 +19,8 @@ import com.entlogics.restaurantsystem.entity.Waiter;
 import com.entlogics.restaurantsystem.util.DBConnectionUtil;
 
 public class RestaurantDAO implements IRestaurantDAO {
-
+	
+	//method to list all restaurants
 	@Override
 	public List<Restaurant> getRestaurants() {
 
@@ -73,6 +74,7 @@ public class RestaurantDAO implements IRestaurantDAO {
 
 	}
 	
+	//method to create a restaurant
 	@Override
 	public Boolean createRestaurant(Restaurant restaurantData) {
 
@@ -233,6 +235,7 @@ public class RestaurantDAO implements IRestaurantDAO {
 
 	}
 	
+	//method to edit a restaurant
 	@Override
 	public Boolean editRestaurant(Restaurant restaurantData, String restaurantID) {
 		
@@ -287,7 +290,8 @@ public class RestaurantDAO implements IRestaurantDAO {
 		return flag;		
 		
 	}
-
+	
+	//method to delete a restaurant
 	@Override
 	public Boolean deleteRestaurant(String restaurantId) {
 		

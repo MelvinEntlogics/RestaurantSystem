@@ -133,6 +133,7 @@ public class GetRestaurantInfoController extends HttpServlet {
 	}
 
 	
+	//this method is used to delete a restaurant
 	protected void doDelete(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
