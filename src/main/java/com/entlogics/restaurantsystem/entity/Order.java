@@ -2,22 +2,36 @@ package com.entlogics.restaurantsystem.entity;
 
 import java.sql.Date;
 import java.util.List;
+import java.util.Set;
 
 public class Order {
 
 	private int orderId;
 
-	private int customerId;
+	private Integer customerId;
 
-	private int waiterId;
+	private Integer waiterId;
+	
+	private Integer orderAmount;
 
-	private int restaurantId;
+	private Integer restaurantId;
 
 	private Date orderDate;
 
 	private String type;
 
 	private List<Dish> orderItems;
+	
+	private List<OrderItems> orderItem;
+	
+
+	public List<OrderItems> getOrderItem() {
+		return orderItem;
+	}
+
+	public void setOrderItem(List<OrderItems> orderItem) {
+		this.orderItem = orderItem;
+	}
 
 	public int getOrderId() {
 		return orderId;
@@ -66,6 +80,14 @@ public class Order {
 	public void setType(String type) {
 		this.type = type;
 	}
+	
+	public Integer getOrderAmount() {
+		return orderAmount;
+	}
+
+	public void setOrderAmount(Integer orderAmount) {
+		this.orderAmount = orderAmount;
+	}
 
 	public List<Dish> getOrderItems() {
 		return orderItems;
@@ -77,8 +99,8 @@ public class Order {
 
 	@Override
 	public String toString() {
-		return "Order [orderId=" + orderId + ", customerId=" + customerId + ", waiterId=" + waiterId + ", restaurantId="
-				+ restaurantId + ", orderDate=" + orderDate + ", type=" + type + "]";
+		return "Order [orderId=" + orderId + ", customerId=" + customerId + ", waiterId=" + waiterId + ", orderAmount="
+				+ orderAmount + ", restaurantId=" + restaurantId + ", orderDate=" + orderDate + ", type=" + type + "]";
 	}
 
 }

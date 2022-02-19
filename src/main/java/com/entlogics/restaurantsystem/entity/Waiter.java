@@ -1,6 +1,7 @@
 package com.entlogics.restaurantsystem.entity;
 
 import java.util.List;
+import java.util.Set;
 
 public class Waiter {
 	
@@ -12,7 +13,7 @@ public class Waiter {
 
 	private Integer restaurantId;
 
-	private List<Order> waiterOrders;
+	private Set<Order> waiterOrders;
 
 	public int getWaiterId() {
 		return waiterId;
@@ -46,11 +47,11 @@ public class Waiter {
 		this.waiterSalary = waiterSalary;
 	}
 
-	public List<Order> getWaiterOrders() {
+	public Set<Order> getWaiterOrders() {
 		return waiterOrders;
 	}
 
-	public void setWaiterOrders(List<Order> waiterOrders) {
+	public void setWaiterOrders(Set<Order> waiterOrders) {
 		this.waiterOrders = waiterOrders;
 	}
 
