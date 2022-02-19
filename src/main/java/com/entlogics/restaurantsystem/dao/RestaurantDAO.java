@@ -337,6 +337,7 @@ public class RestaurantDAO implements IRestaurantDAO {
 		return flag;
 	}
 
+	//method to get customers of a restaurant
 	@Override
 	public List<Customer> getRestaurantCustomer(int restaurant_id) {
 
@@ -441,7 +442,7 @@ public class RestaurantDAO implements IRestaurantDAO {
 		return listOfcustomers;
 
 	}
-
+	//method to get info of a specific customer in a restaurant
 	@Override
 	public Customer getRestaurantCustomerInfo(int customer_id) {
 
@@ -585,7 +586,7 @@ public class RestaurantDAO implements IRestaurantDAO {
 		return listOfWaiters;
 
 	}
-
+	//method to get info of a specific waiter
 	@Override
 	public Waiter getRestaurantWaitersInfo(int waiter_id) {
 
@@ -655,7 +656,8 @@ public class RestaurantDAO implements IRestaurantDAO {
 		return waiterInfo;
 
 	}
-
+	
+	//method to list dishes of a restaurant
 	@Override
 	public List<RestaurantDish> getRestaurantDishes(int restaurant_id) {
 
@@ -701,7 +703,8 @@ public class RestaurantDAO implements IRestaurantDAO {
 		return listOfDishes;
 
 	}
-
+	
+	//method to get orders in a restaurant
 	@Override
 	public List<Order> getRestaurantOrders(int restaurant_id) {
 
@@ -777,6 +780,7 @@ public class RestaurantDAO implements IRestaurantDAO {
 
 	}
 
+	//method to link dishes to a restaurant
 	@Override
 	public Boolean linkDishRestaurant(RestaurantDish dishtData, int restaurantId) {
 
@@ -818,6 +822,7 @@ public class RestaurantDAO implements IRestaurantDAO {
 
 	}
 
+	//method to link customers to a restaurant
 	@Override
 	public Boolean linkCustomerRestaurant(RestaurantCustomer customerData, int restaurant_id) {
 
